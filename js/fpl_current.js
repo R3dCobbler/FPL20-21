@@ -1,7 +1,7 @@
 (function() {
     // Create the connector object
     let myConnector = tableau.makeConnector();
-    let myProxy = 'https://cors-anywhere.herokuapp.com/';
+    let myProxy = 'https://cors-anywhere.herokuapp.com/'
   
     // Define the schema
     myConnector.getSchema = function(schemaCallback) {
@@ -204,7 +204,7 @@
     function getHistory(table, doneCallback) {
       let promises = [];
       let noPlayers = parseInt(tableau.connectionData); 
-    //   let noPlayers = 700; // Modified for testing since I kept getting hit with "too many requests" errors
+    
 
       for (let i = 1; i <= noPlayers; i++) {
         let apiCall =

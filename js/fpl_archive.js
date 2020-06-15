@@ -1,7 +1,7 @@
 (function() {
     // Create the connector object
     let myConnector = tableau.makeConnector();
-    let myProxy = 'https://cors-anywhere.herokuapp.com/'
+    let myProxy = 'https://cors-anywhere.herokuapp.com/https://r3dcobbler.github.io/FPL19-20/'
   
     // Define the schema
     myConnector.getSchema = function(schemaCallback) {

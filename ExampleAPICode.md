@@ -8,63 +8,58 @@ This contains the following types of information
 ### Events Information   (Shows Gameweek info)
 
 "events": [{
-		"id": 1,
-		"name": "Gameweek 1",
-		"deadline_time": "2019-08-09T18:00:00Z",
-		"average_entry_score": 65,
-		"finished": true,
-		"data_checked": false,
-		"highest_scoring_entry": 3493085,
-		"deadline_time_epoch": 1565373600,
-		"deadline_time_game_offset": 0,
-		"highest_score": 142,
-		"is_previous": false,
-		"is_current": false,
-		"is_next": false,
-		"chip_plays": [{
-			"chip_name": "bboost",
-			"num_played": 128770
-		}, {
-			"chip_name": "3xc",
-			"num_played": 271367
-		}],
-		"most_selected": 183,
-		"most_transferred_in": 1,
-		"top_element": 214,
-		"top_element_info": {
-			"id": 214,
-			"points": 20
-		},
-		"transfers_made": 0,
-		"most_captained": 191,
-		"most_vice_captained": 189
-	}, 
+	"id":1,
+	"name":"Gameweek 1",
+	"deadline_time":"2020-09-12T12:30:00Z",
+	"average_entry_score":0,
+	"finished":false,
+	"data_checked":false,
+	"highest_scoring_entry":null,
+	"deadline_time_epoch":1599913800,
+	"deadline_time_game_offset":0,
+	"highest_score":null,
+	"is_previous":false,
+	"is_current":false,
+	"is_next":true,
+	"chip_plays":[],
+	"most_selected":null,
+	"most_transferred_in":null,
+	"top_element":null,
+	"top_element_info":null,
+	"transfers_made":0,
+	"most_captained":null,
+	"most_vice_captained":null}, 
 
 ### Game Settings Information
 
-"game_settings": {
-		"league_join_private_max": 20,
-		"league_join_public_max": 3,
-		"league_max_size_public_classic": 20,
-		"league_max_size_public_h2h": 16,
-		"league_max_size_private_h2h": 16,
-		"league_max_ko_rounds_private_h2h": 3,
-		"league_prefix_public": "League",
-		"league_points_h2h_win": 3,
-		"league_points_h2h_lose": 0,
-		"league_points_h2h_draw": 1,
-		"squad_squadplay": 11,
-		"squad_squadsize": 15,
-		"squad_team_limit": 3,
-		"squad_total_spend": 1000,
-		"ui_currency_multiplier": 10,
-		"ui_use_special_shirts": false,
-		"ui_special_shirt_exclusions": [],
-		"stats_form_days": 30,
-		"sys_vice_captain_enabled": true,
-		"transfers_sell_on_fee": 0.5,
-		"cup_start_event_id": 17,
-		"timezone": "UTC"
+"game_settings":{
+	"league_join_private_max":25,
+	"league_join_public_max":5,
+	"league_max_size_public_classic":20,
+	"league_max_size_public_h2h":16,
+	"league_max_size_private_h2h":16,
+	"league_max_ko_rounds_private_h2h":3,
+	"league_prefix_public":"League",
+	"league_points_h2h_win":3,
+	"league_points_h2h_lose":0,
+	"league_points_h2h_draw":1,
+	"league_ko_first_instead_of_random":false,
+	"cup_start_event_id":17,
+	"cup_stop_event_id":38,
+	"cup_qualifying_method":"event",
+	"cup_type":"random",
+	"squad_squadplay":11,
+	"squad_squadsize":15,
+	"squad_team_limit":3,
+	"squad_total_spend":1000,
+	"ui_currency_multiplier":10,
+	"ui_use_special_shirts":false,
+	"ui_special_shirt_exclusions":[],
+	"stats_form_days":30,
+	"sys_vice_captain_enabled":true,
+	"transfers_sell_on_fee":0.5,
+	"league_h2h_tiebreak_stats":["+goals_scored","-goals_conceded"],
+	"timezone":"UTC"
 	},
 
 ### Phases Information  (Shows Month start and end gameweeks)
@@ -79,160 +74,170 @@ This contains the following types of information
 
 ### Team Information   
 
-"teams": [{
-		"code": 3,
-		"draw": 0,
-		"form": null,
-		"id": 1,
-		"loss": 0,
-		"name": "Arsenal",
-		"played": 0,
-		"points": 0,
-		"position": 0,
-		"short_name": "ARS",
-		"strength": 4,
-		"team_division": null,
-		"unavailable": false,
-		"win": 0,
-		"strength_overall_home": 1250,
-		"strength_overall_away": 1330,
-		"strength_attack_home": 1210,
-		"strength_attack_away": 1260,
-		"strength_defence_home": 1290,
-		"strength_defence_away": 1330
+"teams":[{
+	"code":3,
+	"draw":0,
+	"form":null,
+	"id":1,
+	"loss":0,
+	"name":"Arsenal",
+	"played":0,
+	"points":0,
+	"position":0,
+	"short_name":"ARS",
+	"strength":null,
+	"team_division":null,
+	"unavailable":false,
+	"win":0,
+	"strength_overall_home":0,
+	"strength_overall_away":0,
+	"strength_attack_home":0,
+	"strength_attack_away":0,
+	"strength_defence_home":0,
+	"strength_defence_away":0,
+	"pulse_id":1
 	}, 
 
 ### Total FPL Players
-"total_players": 6803887,
+"total_players":458715,
 
 
 ### Player Information   (Be aware of some minor differences to the old api)
 
-"elements": [{
-		"chance_of_playing_next_round": null,
-		"chance_of_playing_this_round": null,
-		"code": 69140,
-		"cost_change_event": 0,
-		"cost_change_event_fall": 0,
-		"cost_change_start": -2,
-		"cost_change_start_fall": 2,
-		"dreamteam_count": 0,
-		"element_type": 2,
-		"ep_next": "0.0",
-		"ep_this": "1.0",
-		"event_points": 0,
-		"first_name": "Shkodran",
-		"form": "0.0",
-		"id": 1,
-		"in_dreamteam": false,
-		"news": "",
-		"news_added": null,
-		"now_cost": 53,
-		"photo": "69140.jpg",
-		"points_per_game": "0.0",
-		"second_name": "Mustafi",
-		"selected_by_percent": "0.4",
-		"special": false,
-		"squad_number": null,
-		"status": "a",
-		"team": 1,
-		"team_code": 3,
-		"total_points": 0,
-		"transfers_in": 4985,
-		"transfers_in_event": 283,
-		"transfers_out": 24936,
-		"transfers_out_event": 1086,
-		"value_form": "0.0",
-		"value_season": "0.0",
-		"web_name": "Mustafi",
-		"minutes": 0,
-		"goals_scored": 0,
-		"assists": 0,
-		"clean_sheets": 0,
-		"goals_conceded": 0,
-		"own_goals": 0,
-		"penalties_saved": 0,
-		"penalties_missed": 0,
-		"yellow_cards": 0,
-		"red_cards": 0,
-		"saves": 0,
-		"bonus": 0,
-		"bps": 0,
-		"influence": "0.0",
-		"creativity": "0.0",
-		"threat": "0.0",
-		"ict_index": "0.0"
+"elements":[{
+	"chance_of_playing_next_round":null,
+	"chance_of_playing_this_round":null,
+	"code":37605,
+	"cost_change_event":0,
+	"cost_change_event_fall":0,
+	"cost_change_start":0,
+	"cost_change_start_fall":0,
+	"dreamteam_count":0,
+	"element_type":3,
+	"ep_next":"0.0",
+	"ep_this":null,
+	"event_points":0,
+	"first_name":"Mesut",
+	"form":"0.0",
+	"id":1,
+	"in_dreamteam":false,
+	"news":"",
+	"news_added":null,
+	"now_cost":70,
+	"photo":"37605.jpg",
+	"points_per_game":"0.0",
+	"second_name":"Özil",
+	"selected_by_percent":"2.6",
+	"special":false,
+	"squad_number":null,
+	"status":"a",
+	"team":1,
+	"team_code":3,
+	"total_points":53,
+	"transfers_in":0,
+	"transfers_in_event":0,
+	"transfers_out":0,
+	"transfers_out_event":0,
+	"value_form":"0.0",
+	"value_season":"7.6",
+	"web_name":"Özil",
+	"minutes":1439,
+	"goals_scored":1,
+	"assists":3,
+	"clean_sheets":5,
+	"goals_conceded":20,
+	"own_goals":0,
+	"penalties_saved":0,
+	"penalties_missed":0,
+	"yellow_cards":1,
+	"red_cards":0,
+	"saves":0,
+	"bonus":1,
+	"bps":256,
+	"influence":"223.6",
+	"creativity":"582.9",
+	"threat":"190.0",
+	"ict_index":"99.8",
+	"influence_rank":251,
+	"influence_rank_type":108,
+	"creativity_rank":35,
+	"creativity_rank_type":29,
+	"threat_rank":174,
+	"threat_rank_type":95,
+	"ict_index_rank":135,
+	"ict_index_rank_type":72
 	}, 
 
 ### Player Stats Information
 
-"element_stats": [{
-		"label": "Minutes played",
-		"name": "minutes"
+"element_stats":[{
+	"label":"Minutes played",
+	"name":"minutes"
 	}, {
-		"label": "Goals scored",
-		"name": "goals_scored"
+	"label":"Goals scored",
+	"name":"goals_scored"
 	}, {
-		"label": "Assists",
-		"name": "assists"
+	"label":"Assists",
+	"name":"assists"
 	}, {
-		"label": "Clean sheets",
-		"name": "clean_sheets"
+	"label":"Clean sheets",
+	"name":"clean_sheets"
 	}, {
-		"label": "Goals conceded",
-		"name": "goals_conceded"
+	"label":"Goals conceded",
+	"name":"goals_conceded"
 	}, {
-		"label": "Own goals",
-		"name": "own_goals"
+	"label":"Own goals",
+	"name":"own_goals"
 	}, {
-		"label": "Penalties saved",
-		"name": "penalties_saved"
+	"label":"Penalties saved",
+	"name":"penalties_saved"
 	}, {
-		"label": "Penalties missed",
-		"name": "penalties_missed"
+	"label":"Penalties missed",
+	"name":"penalties_missed"
 	}, {
-		"label": "Yellow cards",
-		"name": "yellow_cards"
+	"label":"Yellow cards",
+	"name":"yellow_cards"
 	}, {
-		"label": "Red cards",
-		"name": "red_cards"
+	"label":"Red cards",
+	"name":"red_cards"
 	}, {
-		"label": "Saves",
-		"name": "saves"
+	"label":"Saves",
+	"name":"saves"
 	}, {
-		"label": "Bonus",
-		"name": "bonus"
+	"label":"Bonus",
+	"name":"bonus"
 	}, {
-		"label": "Bonus Points System",
-		"name": "bps"
+	"label":"Bonus Points System",
+	"name":"bps"
 	}, {
-		"label": "Influence",
-		"name": "influence"
+	"label":"Influence",
+	"name":"influence"
 	}, {
-		"label": "Creativity",
-		"name": "creativity"
+	"label":"Creativity",
+	"name":"creativity"
 	}, {
-		"label": "Threat",
-		"name": "threat"
+	"label":"Threat",
+	"name":"threat"
 	}, {
-		"label": "ICT Index",
-		"name": "ict_index"
-	}],
+	"label":"ICT Index",
+	"name":"ict_index"
+}],
 
 ### Player Type Information
 
-"element_types": [{
-		"id": 1,
-		"plural_name": "Goalkeepers",
-		"plural_name_short": "GKP",
-		"singular_name": "Goalkeeper",
-		"singular_name_short": "GKP",
-		"squad_select": 2,
-		"squad_min_play": 1,
-		"squad_max_play": 1,
-		"ui_shirt_specific": true,
-		"sub_positions_locked": [12]
-	}, 
+"element_types":[{
+	"id":1,
+	"plural_name":"Goalkeepers",
+	"plural_name_short":"GKP",
+	"singular_name":"Goalkeeper",
+	"singular_name_short":"GKP",
+	"squad_select":2,
+	"squad_min_play":1,
+	"squad_max_play":1,
+	"ui_shirt_specific":true,
+	"sub_positions_locked":[12],
+	"element_count":47
+	},
 
 ## Fixture Information   ("https://fantasy.premierleague.com/api/fixtures/") 
  
@@ -452,7 +457,7 @@ This contains the following types of information
 }]
 
 ## Player History Information  ("https://fantasy.premierleague.com/api/element-summary/176/")
-Example data for element #176 (Wilfred Ndidi)
+Example data for element #176 
 
 ### Forthcoming Fixture Information
 
@@ -510,29 +515,55 @@ Example data for element #176 (Wilfred Ndidi)
 
 
 ### Past History Information  
-Data from Season 2016-17, 2017-18, 2018-19
+Data from Season 2016-17, 2017-18, 2018-19, 2019-20
 
-"history_past": [{
-		"season_name": "2016/17",
-		"element_code": 203341,
-		"start_cost": 50,
-		"end_cost": 46,
-		"total_points": 59,
-		"minutes": 1521,
-		"goals_scored": 2,
-		"assists": 3,
-		"clean_sheets": 4,
-		"goals_conceded": 28,
-		"own_goals": 0,
-		"penalties_saved": 0,
-		"penalties_missed": 0,
-		"yellow_cards": 0,
-		"red_cards": 0,
-		"saves": 0,
-		"bonus": 2,
-		"bps": 288,
-		"influence": "313.6",
-		"creativity": "93.8",
-		"threat": "357.0",
-		"ict_index": "76.4"
-	}, 
+"history_past": [
+    {
+      "season_name": "2011/12",
+      "element_code": 82514,
+      "start_cost": 40,
+      "end_cost": 40,
+      "total_points": 22,
+      "minutes": 1170,
+      "goals_scored": 0,
+      "assists": 1,
+      "clean_sheets": 0,
+      "goals_conceded": 26,
+      "own_goals": 0,
+      "penalties_saved": 0,
+      "penalties_missed": 0,
+      "yellow_cards": 1,
+      "red_cards": 0,
+      "saves": 0,
+      "bonus": 4,
+      "bps": 0,
+      "influence": "0.0",
+      "creativity": "0.0",
+      "threat": "0.0",
+      "ict_index": "0.0"
+    },
+    {
+      "season_name": "2018/19",
+      "element_code": 82514,
+      "start_cost": 45,
+      "end_cost": 42,
+      "total_points": 50,
+      "minutes": 2046,
+      "goals_scored": 0,
+      "assists": 0,
+      "clean_sheets": 5,
+      "goals_conceded": 49,
+      "own_goals": 0,
+      "penalties_saved": 0,
+      "penalties_missed": 0,
+      "yellow_cards": 1,
+      "red_cards": 0,
+      "saves": 0,
+      "bonus": 4,
+      "bps": 349,
+      "influence": "331.6",
+      "creativity": "46.3",
+      "threat": "3.0",
+      "ict_index": "38.3"
+    }
+  ]

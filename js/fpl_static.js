@@ -474,7 +474,7 @@
     // Create event listeners for when the user submits the form
     $(document).ready(function() {
         $('#submitButton').click(function() {
-            tableau.connectionName = 'FPL 2019-20 Player and Team Stats'; // This will be the data source name in Tableau
+            tableau.connectionName = 'FPL 2020-21 Player and Team Stats'; // This will be the data source name in Tableau
             $.getJSON(myProxy + 'https://fantasy.premierleague.com/api/bootstrap-static/', function(resp) {
 				//resp.toJSON();
                 tableau.connectionData = resp.elements.length.toString();

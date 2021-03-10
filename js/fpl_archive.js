@@ -1,7 +1,7 @@
 (function() {
     // Create the connector object
-    let myConnector = tableau.makeConnector();
-    let myProxy = 'https://r3dc-cors-proxy.herokuapp.com/';
+    var myConnector = tableau.makeConnector();
+    var myProxy = 'https://r3dc-cors-proxy.herokuapp.com/';
   
     // Define the schema
     myConnector.getSchema = function(schemaCallback) {
@@ -158,12 +158,12 @@
   
     //helper function to get player history past
     function getHistoryPast(table, doneCallback) {
-      let promises = [];
-      let noPlayers = parseInt(tableau.connectionData);
+      var promises = [];
+      var noPlayers = parseInt(tableau.connectionData);
     //   let noPlayers = 700; // Modified for testing since I kept getting hit with "too many requests" errors
   
-      for (let i = 1; i <= noPlayers; i++) {
-        let apiCall =
+      for (var i = 1; i <= noPlayers; i++) {
+        var apiCall =
           myProxy +
           "https://fantasy.premierleague.com/api/element-summary/" +
           i +
@@ -176,11 +176,11 @@
       }
   
       $.when.apply($, promises).done(function() {
-        let tableData = [];
-        for (let r = 0, rlen = arguments.length; r < rlen; r++) {
-          let resp = arguments[r][0];
+        var tableData = [];
+        for (var r = 0, rlen = arguments.length; r < rlen; r++) {
+          var resp = arguments[r][0];
           if (resp && resp.history_past.length > 0) {
-            for (let i = 0, len = resp.history_past.length; i < len; i++) {
+            for (var i = 0, len = resp.history_past.length; i < len; i++) {
               tableData.push({
                 season_name: resp.history_past[i].season_name,
                 element_code: resp.history_past[i].element_code,
@@ -216,7 +216,7 @@
   
     // Download the data
     myConnector.getData = function(table, doneCallback) {
-      let tableData = [];
+      var tableData = [];
   
       // get player information data
       if (table.tableInfo.id === "playerinfo") {
